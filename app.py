@@ -5,5 +5,8 @@ prolog = Prolog()
 prolog.consult("knowledge_base.pl")
 
 
-results = list(prolog.query("parent(X, Y)"))
-print("Results from Prolog:", results)
+results = list(prolog.query("posible_enfermedad(juan, Enfermedad)"))
+unique = {result["Enfermedad"] for result in results}
+print("Enfermedades posibles para Juan:")
+for enfermedad in unique:
+    print(enfermedad)
