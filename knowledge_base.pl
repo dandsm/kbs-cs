@@ -11,7 +11,7 @@ sintoma(resfriado, dolor_garganta).
 sintoma(covid, fiebre).
 sintoma(covid, tos_seca).
 sintoma(covid, perdida_olfato).
-% sintoma(covid, dificultad_respirar).  % Igual lo comentamos aquí
+sintoma(covid, dificultad_respirar).
 
 sintoma(alergia, estornudos).
 sintoma(alergia, ojos_llorosos).
@@ -29,6 +29,11 @@ sintomas_paciente(juan, dolor_garganta).
 sintomas_paciente(luisa, estornudos).
 sintomas_paciente(luisa, ojos_llorosos).
 sintomas_paciente(luisa, congestion_nasal).
+
+sintomas_paciente(rodrigo_chaves, fiebre).
+sintomas_paciente(rodrigo_chaves, tos_seca).
+sintomas_paciente(rodrigo_chaves, perdida_olfato).
+sintomas_paciente(rodrigo_chaves, dificultad_respirar).
 
 % Regla: una enfermedad es posible si, para TODO síntoma de la enfermedad, el paciente lo presenta
 posible_enfermedad(Paciente, Enfermedad) :-
