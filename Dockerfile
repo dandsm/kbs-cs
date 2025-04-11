@@ -1,5 +1,5 @@
 # Use a base Python image (adjust version as needed)
-FROM python:3.9
+FROM python:3.12
 
 # Install SWI-Prolog (Debian/Ubuntu style)
 RUN apt-get update && \
@@ -8,6 +8,9 @@ RUN apt-get update && \
 
 # Install PySWIP (so Python can interface with Prolog)
 RUN pip install pyswip
+
+# Install PyDatalog (Python Datalog)
+RUN pip install pydatalog
 
 # Create and set a working directory (inside the container)
 WORKDIR /app

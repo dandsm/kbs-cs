@@ -1,10 +1,11 @@
 ## Prerequisites
+
 1. Create python virtual environment
 2. Activate the virtual environment:
-    - On macOS/Linux: `source venv/bin/activate`
-    - On Windows: `.\venv\Scripts\activate`
+   - On macOS/Linux: `source venv/bin/activate`
+   - On Windows: `.\venv\Scripts\activate`
 3. Install dependencies:
-    - `pip install -r requirements.txt`
+   - `pip install -r requirements.txt`
 
 ## Steps to build and run
 
